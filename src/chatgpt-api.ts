@@ -1,11 +1,12 @@
 import { encode as gptEncode } from 'gpt-3-encoder'
+// import { fetch } from './fetch'
+import 'isomorphic-fetch'
 import Keyv from 'keyv'
 import pTimeout from 'p-timeout'
 import QuickLRU from 'quick-lru'
 import { v4 as uuidv4 } from 'uuid'
 
 import * as types from './types'
-import { fetch } from './fetch'
 import { fetchSSE } from './fetch-sse'
 
 // NOTE: this is not a public model, but it was leaked by the ChatGPT webapp.
